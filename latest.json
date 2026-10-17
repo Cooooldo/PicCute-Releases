@@ -1,0 +1,19 @@
+{
+  "version": "0.7.0",
+  "notes": "# PicCute 0.7.0 更新说明\n\n本文档汇总自 `0.6.0` 版本以来 `PicCute 0.7.0` 的全新界面改版、交互重构与序列帧抽帧功能更新。\n\n---\n\n## 一、版本信息\n\n- **应用版本**：`0.6.0` → **`0.7.0`**（`package.json`、`package-lock.json`、`src-tauri/Cargo.toml`、`src-tauri/tauri.conf.json` 已同步对齐）。\n\n---\n\n## 二、核心更新内容\n\n### 1. 全新暗色专业级界面（对齐 Figma 设计规范）\n- **纯暗色沉浸主题**：移除浅色模式，统一采用专业级深色配色方案（工作区主画布 `#1b1b1b`，顶栏 / 侧边栏 / 底栏 `#242424`，`0.5px` `rgba(255, 255, 255, 0.1)` 极细分割线）。\n- **三栏 + 顶底栏结构重构**：\n  - **顶部标题栏（`45px`）**：精调 macOS 原生红黄绿交通灯位置（红色关闭按钮距上、下、左均为 `16px`），去除冗余标题文字，界面更加纯粹。\n  - **左侧竖向模式导航栏（`56px`）**：将原有的顶部横向分段切换改为左侧竖向图标栏（`16×16` 图标，支持「压缩」、「转换格式」、「序列帧」三种模式切换），底部集成设置齿轮入口。\n  - **中间参数面板（`220px`）**：统一各模式下的参数字号、滑块样式（`#3e3e3e` 轨道、`#117dff` 进度填充、`17×12` 滑块手柄）、单选按钮与目标格式网格按钮（选中态 `rgba(2, 123, 255, 0.5)`，悬停/按住态 `#027bff`）。\n  - **底部状态栏（`32px`）**：左侧常驻显示当前版本号（`PicCute V0.7.0`），右侧实时显示当前队列图片张数或序列帧数。\n\n### 2. 序列帧（动图）操作界面重做与「抽帧」功能\n- **动图预览与控制栏重做**：\n  - **顶部全宽预览画布**：采用无边距直角矩形预览舞台（`330px` 高），支持纯黑 / 纯白背景一键切换（`24×24` 双圈指示器）。\n  - **播放控制栏（`40px`）**：配備 `24×24` 播放/暂停按钮（默认 `5%` 白色底、悬停/按住 `10%` 白色底）、实时进度拖拽滑块与帧序号指示（如 `1/10`）。\n  - **序列帧缩略图网格**：底部 8 列直角正方形缩略图排列，复用 1024px 高清解码缓存，彻底解决缩略图模糊与切换闪烁问题。\n- **新增动图「抽帧」功能（仅序列帧模式）**：\n  - 在右下角悬浮操作栏新增 **「抽帧」** 胶囊按钮及弹出菜单，提供三档基于原始完整序列帧的快速抽帧操作，并带有当前档位对勾标识：\n    - **隔1张删1张**：每 2 帧保留 1 帧（抽掉 1/2 帧数），大幅降低动图体积。\n    - **隔1张删2张**：每 3 帧保留 1 帧（抽掉 2/3 帧数），适合高帧率录屏或长序列精简。\n    - **还原**：一键恢复为最初导入的完整序列帧列表。\n\n### 3. 交互与视觉细节打磨\n- **质量百分比支持手动输入**：除拖动滑块外，支持直接点击百分比数值框输入 `1 – 100` 的精确数值（支持 `Enter` 确认、`Esc` 取消、上下方向键微调）。\n- **左下角设置弹出菜单**：点击左下角齿轮弹出悬浮菜单，集成 **「关于 PicCute」**、**「检查更新」** 以及 **「语言」** 二级子菜单（支持 `简体中文` / `English` 实时切换与对勾指示）。\n- **悬浮操作栏毛玻璃模糊**：右下角 `Compress / Convert / Assemble`、`Clear`、`抽帧` 按钮及进度胶囊条均支持背景毛玻璃模糊（`backdrop-blur-md`），距底部分割线间距精调为 `8px`。\n- **压缩前后对比弹窗暗色棋盘格**：将透明通道预览背景由高亮白灰格替换为柔和深色棋盘格（`#181818` / `#222222`），避免暗色界面下打开预览时刺眼。",
+  "pub_date": "2026-10-17T13:51:27.004Z",
+  "platforms": {
+    "darwin-universal": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0dNSlk5cGRvK080dWRJS3p0QTAxV2gzd0ozaHlPOHgxalF4Z091YWNvTjVMcFZqVmR5TVpBOTVQaEVRSG8vUnlETzQwejFzelY5WnRYOUQvbW9aU1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ1MDg2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmJKUXlPUnRxVG81QzJmMU5zbEFLUU9IY0FJcGFxSW4vN3JQdUlaYlQ5V3dTY2tZZ2pENlVPSnhpbmlWcjZyU3dONFAxYkhyWGJrS0xaamhBUDNyc0NBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.0/PicCute.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0dNSlk5cGRvK080dWRJS3p0QTAxV2gzd0ozaHlPOHgxalF4Z091YWNvTjVMcFZqVmR5TVpBOTVQaEVRSG8vUnlETzQwejFzelY5WnRYOUQvbW9aU1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ1MDg2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmJKUXlPUnRxVG81QzJmMU5zbEFLUU9IY0FJcGFxSW4vN3JQdUlaYlQ5V3dTY2tZZ2pENlVPSnhpbmlWcjZyU3dONFAxYkhyWGJrS0xaamhBUDNyc0NBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.0/PicCute.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0dNSlk5cGRvK080dWRJS3p0QTAxV2gzd0ozaHlPOHgxalF4Z091YWNvTjVMcFZqVmR5TVpBOTVQaEVRSG8vUnlETzQwejFzelY5WnRYOUQvbW9aU1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjQ1MDg2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmJKUXlPUnRxVG81QzJmMU5zbEFLUU9IY0FJcGFxSW4vN3JQdUlaYlQ5V3dTY2tZZ2pENlVPSnhpbmlWcjZyU3dONFAxYkhyWGJrS0xaamhBUDNyc0NBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.0/PicCute.app.tar.gz"
+    }
+  }
+}
