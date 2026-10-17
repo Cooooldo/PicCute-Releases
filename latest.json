@@ -1,19 +1,19 @@
 {
-  "version": "0.7.4",
-  "notes": "# PicCute 0.7.4 更新说明\n\n本文档汇总自 `0.7.3` 版本以来 `PicCute 0.7.4` 在全局极简黑白视觉主题统一、按钮交互状态精细化调优、以及 Toast 与更新弹窗细节完善上的更新内容。\n\n---\n\n## 一、版本信息\n\n- **应用版本**：`0.7.3` → **`0.7.4`**（`package.json`、`package-lock.json`、`src-tauri/Cargo.toml`、`src-tauri/Cargo.lock`、`src-tauri/tauri.conf.json` 已同步对齐）。\n\n---\n\n## 二、核心更新内容\n\n### 1. 全局高亮色由蓝色全面切换为纯白极简风格\n- **主操作与功能按钮**：\n  - 底部操作栏（`ActionBar`）的「开始压缩 / 开始转换 / 开始合成」主按钮、更新弹窗（`UpdateDialog`）的「立即更新」按钮、关于弹窗（`AboutDialog`）的「OK」按钮，以及转换面板（`ConvertPanel`）与序列帧面板（`FramesPanel`）的目标格式选中态统一改为白底黑字（`#FFFFFF` 底色 + `#000000` 文本）。\n  - 白色按钮的悬停与按下（hold）状态统一调整为 `#CCCCCC`。\n- **表单控件与状态高亮**：\n  - 单选框选中图标（`radio-checked.svg`）、滑块进度条与滑块头（`Slider`）、开关开启态（`Switch`）统一切换为纯白高亮配色。\n  - 输入框聚焦描边、序列帧预览（`FramesPreview`）背景色选择器激活环与缩略图选中边框、操作栏进度条及完成计数、大图对比弹窗（`PreviewDialog`）加载指示器均统一为白色。\n  - 大图对比弹窗右上角「压缩后」标签底色调整为深色 `#1b1b1b`。\n\n### 2. 弹窗与 Toast 排版细节优化\n- **更新弹窗按钮内边距**：将 `UpdateDialog` 底部操作按钮（取消 / 稍后 / 立即更新）的左右内边距统一调整为 `16px`。\n- **Toast 提示文案字重**：将 `Toaster` 提示文案字重由 `Bold` 调整为 `Regular`（`font-normal`），视觉层次更清爽自然。",
-  "pub_date": "2026-10-17T19:32:56.830Z",
+  "version": "0.7.5",
+  "notes": "# PicCute 0.7.5 更新说明\n\n本文档汇总 **0.7.5** 针对在线更新在部分 CDN 缓存旧版本时无法从 0.7.2 升级到 0.7.3 等问题的修复。\n\n---\n\n## 一、版本信息\n\n- **应用版本**：`0.7.4` → **`0.7.5`**（`package.json`、`src-tauri/Cargo.toml`、`src-tauri/tauri.conf.json` 已同步）。\n\n---\n\n## 二、核心更新内容\n\n### 1. 在线更新：多端点聚合检查\n\n- 新增 `check_for_updates_resilient`：依次请求所有配置的更新地址，取**版本号最高**且高于当前版本的发布信息，避免 Tauri 默认「第一个 HTTP 200 即停止」导致 jsDelivr 仍返回 `0.7.2` 时误判为已是最新。\n- 应用内「检查更新」改为使用该逻辑。\n\n### 2. 更新地址调整\n\n- 移除易长期缓存旧 `latest.json` 的 jsDelivr `@main` 地址。\n- 优先使用 GitHub Releases `releases/latest/download/latest.json` 及 ghfast 镜像。\n\n### 3. 发版脚本\n\n- `publish-release.sh` 发布后会校验公开 `latest.json` 版本是否与本次发版一致。\n\n---\n\n## 三、升级说明\n\n- **0.7.2 用户**：若仍无法在线更新，请先手动安装 [v0.7.3](https://github.com/Cooooldo/PicCute-Releases/releases/tag/v0.7.3) 或直接使用本版；**0.7.5 起**在线更新应恢复正常。",
+  "pub_date": "2026-10-17T19:36:12.534Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0VCUTQ5Zm5Nc01zSkQzU3ZwWE1hWEM2UVplbFh1YjNSWGVNNTFNMTh6L3pBOEZESjhJaC9ORkZqVWxhZDR3YUhqT0ZuQXhXY0Q0RmViZzRhWktGaFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NTc2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjNMN3hUV2ZENTFTUVN2emRlNHdMYXlCQ29mSHlUV2N6Vk9ZdzV0SzdZU2Nqd3lESzNtUUF2TTZJZFVoaGVaZ2RzRkZVVWM1a1FHYklNN2lHOG9TdURBPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.4/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FRQmZPdDdYd0tWQVhEdmNNOWpxbVpVM1l0Wld4bTJ1cEx1UmN5TjlMQUY3THRYaC9HWGFUOWd0VmpMQmtucHJxM1RrWndlbmFycWdLblMxYlB1SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NzcyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck9UU3BqQ2JZY3RSbktZeWt0VC9uaUZva2ZYOFQreWVaV1dkcG54aHhsdFBIeDJpZ3FPdW5tQXpLcENhSDRlQkhUdlRvb2REQUI5MVp2Wi9nWHV0MkFnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.5/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0VCUTQ5Zm5Nc01zSkQzU3ZwWE1hWEM2UVplbFh1YjNSWGVNNTFNMTh6L3pBOEZESjhJaC9ORkZqVWxhZDR3YUhqT0ZuQXhXY0Q0RmViZzRhWktGaFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NTc2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjNMN3hUV2ZENTFTUVN2emRlNHdMYXlCQ29mSHlUV2N6Vk9ZdzV0SzdZU2Nqd3lESzNtUUF2TTZJZFVoaGVaZ2RzRkZVVWM1a1FHYklNN2lHOG9TdURBPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.4/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FRQmZPdDdYd0tWQVhEdmNNOWpxbVpVM1l0Wld4bTJ1cEx1UmN5TjlMQUY3THRYaC9HWGFUOWd0VmpMQmtucHJxM1RrWndlbmFycWdLblMxYlB1SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NzcyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck9UU3BqQ2JZY3RSbktZeWt0VC9uaUZva2ZYOFQreWVaV1dkcG54aHhsdFBIeDJpZ3FPdW5tQXpLcENhSDRlQkhUdlRvb2REQUI5MVp2Wi9nWHV0MkFnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.5/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0VCUTQ5Zm5Nc01zSkQzU3ZwWE1hWEM2UVplbFh1YjNSWGVNNTFNMTh6L3pBOEZESjhJaC9ORkZqVWxhZDR3YUhqT0ZuQXhXY0Q0RmViZzRhWktGaFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NTc2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjNMN3hUV2ZENTFTUVN2emRlNHdMYXlCQ29mSHlUV2N6Vk9ZdzV0SzdZU2Nqd3lESzNtUUF2TTZJZFVoaGVaZ2RzRkZVVWM1a1FHYklNN2lHOG9TdURBPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.4/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FRQmZPdDdYd0tWQVhEdmNNOWpxbVpVM1l0Wld4bTJ1cEx1UmN5TjlMQUY3THRYaC9HWGFUOWd0VmpMQmtucHJxM1RrWndlbmFycWdLblMxYlB1SWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjY1NzcyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck9UU3BqQ2JZY3RSbktZeWt0VC9uaUZva2ZYOFQreWVaV1dkcG54aHhsdFBIeDJpZ3FPdW5tQXpLcENhSDRlQkhUdlRvb2REQUI5MVp2Wi9nWHV0MkFnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.5/PicCute.app.tar.gz"
     }
   }
 }
