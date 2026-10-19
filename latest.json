@@ -1,23 +1,19 @@
 {
-  "version": "0.7.6",
-  "notes": "# PicCute 0.7.6 更新说明\r\n\r\n本文档汇总自 `0.7.5` 版本以来 `PicCute 0.7.6` 在全新活力荧光绿（`#86FF44`）主题高亮升级、按钮字重与图标细节优化、以及在线更新并发检查机制完善上的更新内容。\r\n\r\n---\r\n\r\n## 一、版本信息\r\n\r\n- **应用版本**：`0.7.5` → **`0.7.6`**（`package.json`、`package-lock.json`、`src-tauri/Cargo.toml`、`src-tauri/Cargo.lock`、`src-tauri/tauri.conf.json` 已同步对齐）。\r\n\r\n---\r\n\r\n## 二、核心更新内容\r\n\r\n### 1. 全局高亮色与成功状态色统一升级为 `#86FF44`\r\n- **主按钮与交互控件**：\r\n  - 底部操作栏（`ActionBar`）主操作按钮、更新弹窗（`UpdateDialog`）「立即更新」按钮、关于弹窗（`AboutDialog`）`OK` 按钮、以及转换模式（`ConvertPanel`）与序列帧模式（`FramesPanel`）的目标格式选中态统一升级为 `#86FF44` 高亮色搭配 `Medium`（`font-medium`）黑色文字。\r\n  - 质量滑块进度条（`Slider`）、单选框选中图标（`radio-checked.svg`）、开关开启态（`Switch`）、输入框聚焦边框、以及序列帧预览（`FramesPreview`）背景色选择器激活外圈与缩略图选中边框统一采用 `#86FF44`。\r\n- **成功状态文字与标签**：\r\n  - 底部汇总栏成功计数、文件列表「完成 / 已转换」状态标签及节省百分比、大图预览弹窗（`PreviewDialog`）压缩后大小文字均统一为 `#86FF44`。\r\n\r\n### 2. 底部操作栏「查看 / Finder」按钮与图标升级\r\n- 替换为全新圆角线条文件夹图标（`finder-folder.svg`）。\r\n- 支持中英文多语言文案切换：中文界面显示为 **「查看」**，英文界面显示为 **`Finder`**。\r\n\r\n### 3. 在线更新并发检查体验优化\r\n- 优化多端点更新检查策略，改为并发请求所有更新源并取最高版本，同时允许手动检查打断后台冷启动静默检查，响应更迅速可靠。\r\n- 当更新清单尚未包含当前操作系统平台（如云端正在构建对应平台安装包）时，自动忽略 `TargetNotFound` 而不误报网络异常。\r\n\r\n### 4. Windows 端标题栏视觉优化与云端自动同步热更新\r\n- **Windows 原生标题栏配色与顶部分割线**：\r\n  - 通过 Windows DWM 接口（`DwmSetWindowAttribute`）开启深色沉浸标题栏并将原生标题栏背景色精确设为 `#242424`。\r\n  - 在 Windows 端隐藏应用内顶部 45px 版本号横条（`TitleBar`），改为在系统标题栏正下方渲染一条 `0.5px`（`rgba(255,255,255,0.1)`）顶部分割线，且完全不影响 macOS 端布局。\r\n- **Windows 在线热更新与 Mac 发版自动触发云端打包**：\r\n  - `src-tauri/tauri.windows.conf.json` 开启 NSIS 安装包与热更新签名产物生成（`PicCute_{version}_x64-setup.exe` + `.sig`）。\r\n  - 新增 `scripts/publish-release-windows.ps1` 与 GitHub Actions `release-windows` 任务：支持在 Mac 发版后自动触发云端 Windows 构建，自动将 `windows-x86_64` 热更新条目合并进 `latest.json`（保留 `darwin-*`），并同步上传 Windows 安装包与便携版 `.zip`。",
-  "pub_date": "2026-10-18T07:55:42.681Z",
+  "version": "0.7.7",
+  "notes": "# PicCute 0.7.7 更新说明\n\n## 界面优化\n\n- 顶部标题栏、左侧模式导航栏及参数侧栏的分割线统一调整为白色 15% 透明度，保持 0.5px 线宽，让区域边界更清晰。\n- 优化 Windows 原生深色标题栏，背景色统一为 `#242424`，并精简应用内重复的标题栏区域。\n\n## 在线更新\n\n- 当更新源暂未提供当前系统的安装包时，不再误报网络异常。\n- Windows 提供带签名的安装包和便携版，并与 macOS 共用在线更新清单。\n\n## 升级说明\n\n- 本次版本由 0.7.6 升至 0.7.7，已安装 0.7.6 的用户可通过应用内「检查更新」获取本版（对应平台安装包发布后生效）。",
+  "pub_date": "2026-10-19T07:02:35.269Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0I1VGk4QTJOQmVVNmhtRHFPWVZjVEJlVEF4RHBBWENkZSsrMGZtMEhyL1haOHhWV2dqeXd5TThTTFhZbTBiS3lSMXhKRCtNWVI4cTRjcWQrRGxqOVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzAyNzAzCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck5ZRTc2Z25TaktCR2lKUHZwSW8rTjlLc0RuNEIvbzg4bXcveSsvVHlTTnpLOWJqalBBN3c4U2s1L1NQWkc4WGJVekl1ZFllNFhkaXdNYU4wMTRZeERnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.6/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb1BLZnNocGU1K1hTdUh5OFY1QS93S1IzVHRNOGhkV21nZlpsVk4ycGY4dCtvM1NpR1NjYUJWL1Y0VElQYnJuRnJJLzl1MU4vb3V2U1gwOTFIVnd3QWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzkzMzUyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmVITjY5RDE4dFpNZkEzakp4Mnh4Vm5YUmUzZ0hjVVllRzBJYkRGTHhHWFE4SXNXekhJck5kMS9JUFZYMnlUYURyWVVhVGpWSm82MUV6b2ZvTDlHMURBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.7/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0I1VGk4QTJOQmVVNmhtRHFPWVZjVEJlVEF4RHBBWENkZSsrMGZtMEhyL1haOHhWV2dqeXd5TThTTFhZbTBiS3lSMXhKRCtNWVI4cTRjcWQrRGxqOVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzAyNzAzCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck5ZRTc2Z25TaktCR2lKUHZwSW8rTjlLc0RuNEIvbzg4bXcveSsvVHlTTnpLOWJqalBBN3c4U2s1L1NQWkc4WGJVekl1ZFllNFhkaXdNYU4wMTRZeERnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.6/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb1BLZnNocGU1K1hTdUh5OFY1QS93S1IzVHRNOGhkV21nZlpsVk4ycGY4dCtvM1NpR1NjYUJWL1Y0VElQYnJuRnJJLzl1MU4vb3V2U1gwOTFIVnd3QWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzkzMzUyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmVITjY5RDE4dFpNZkEzakp4Mnh4Vm5YUmUzZ0hjVVllRzBJYkRGTHhHWFE4SXNXekhJck5kMS9JUFZYMnlUYURyWVVhVGpWSm82MUV6b2ZvTDlHMURBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.7/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0I1VGk4QTJOQmVVNmhtRHFPWVZjVEJlVEF4RHBBWENkZSsrMGZtMEhyL1haOHhWV2dqeXd5TThTTFhZbTBiS3lSMXhKRCtNWVI4cTRjcWQrRGxqOVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzAyNzAzCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Ck5ZRTc2Z25TaktCR2lKUHZwSW8rTjlLc0RuNEIvbzg4bXcveSsvVHlTTnpLOWJqalBBN3c4U2s1L1NQWkc4WGJVekl1ZFllNFhkaXdNYU4wMTRZeERnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.6/PicCute.app.tar.gz"
-    },
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FUMlpNWEVXdjlSMEhzTzhISm0rZzJlUEtEZ3R5S2hnZ0RLcjdkT0VEVjBQQzR0eTI2MXM3bE54QStRUUJBQmQ3aXdlSVNUVUFUcGdGMUtRQS9KU2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzEwMTIyCWZpbGU6UGljQ3V0ZV8wLjcuNl94NjQtc2V0dXAuZXhlCjFBdTRnTjlaZnI1bjlBQ1Rsc0xvalc5Y2tPek4xeGZFM3RaajYxNW4ycFdTdU1WQWdEbUZVR2lXVzFCUktUcHFHbmx0RGd4NFV2TlZVb1hiUWh6bkRRPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.6/PicCute_0.7.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb1BLZnNocGU1K1hTdUh5OFY1QS93S1IzVHRNOGhkV21nZlpsVk4ycGY4dCtvM1NpR1NjYUJWL1Y0VElQYnJuRnJJLzl1MU4vb3V2U1gwOTFIVnd3QWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMzkzMzUyCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CmVITjY5RDE4dFpNZkEzakp4Mnh4Vm5YUmUzZ0hjVVllRzBJYkRGTHhHWFE4SXNXekhJck5kMS9JUFZYMnlUYURyWVVhVGpWSm82MUV6b2ZvTDlHMURBPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.7.7/PicCute.app.tar.gz"
     }
   }
 }
