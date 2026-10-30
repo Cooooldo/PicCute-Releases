@@ -1,18 +1,18 @@
 {
   "version": "0.8.1",
   "notes": "【新增功能】\n- 新增「智能抠图」功能：支持一键批量去除背景并导出透明 PNG / WebP，首次使用按需下载离线 AI 模型，永久本地运行、保护隐私。\n- 新增「外观切换」功能：支持「自动（跟随系统）」、「黑色」、「白色」三种外观模式自由切换。\n- 新增序列帧「抽帧」功能与内存帧缓存，切换预览零闪烁。\n- 压缩质量支持手动输入精确百分比，也可使用方向键微调。\n- 完善在线自动更新：支持国内镜像加速下载、后台定期检查、稍后提醒和取消下载。\n- 完善 Windows 适配及在线升级支持。\n\n【体验与视觉优化】\n- 全新深浅双色界面升级，焕新 `#60FF44` 主题色、毛玻璃底部操作栏、窗口外框细节、面板分割线与图标视觉。\n- 升级大图对比预览体验：执行后点开预览 0 秒瞬开，执行前预览结果自动缓存并在正式执行时直接复用，无需重复计算。\n- 优化抠图透明边缘噪点清理与无损体积压缩，精简抠图列表与设置面板信息展示。\n- 统一各模式执行按钮样式与全局鼠标光标交互细节。",
-  "pub_date": "2026-10-30T11:36:16.103Z",
+  "pub_date": "2026-10-30T14:16:02.619Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0xGcjNGemVLcnVKSDdkdkJEZ2JEZlNoenduYmJOcmU1NUwvakR3WXZDU0k0Q1k0T2tDSnJtQ1FGSzJ3SGlrNXh0Q0xiZVpFZE9xbitJZVVHcG80clFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzYwMTczCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CnNtL2twckcxUy8wSTZocExrRE9Xb2Y1MVVESGtyM2M4QjIrd24zYXJGbjlDVlJKb1NIWkJORkZNRWx3dlBiS3czZGRzY1hVVXk4dzZsY2Y3RFlQaEJRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb01pTEJLdkNwQTFVQW5aSmlFdUl6djlDL1E1NWpSNng4blpabWVOV25INThWUU5sNE5mUnFHemRLeWJsaHpzcXRtVm9VUmRFTUNRczhMQjh6TEdhT3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzY5NzYwCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CkkyaUZXanM4dTRIczF0eG56OG5sRXhlK28xQ0ZTUVc0dFVwNUZjdmc5N1R6MktrRlJNS3haMGFRWmFMb2d0cWZoWFJBUlNPTzRjeG1ISFJoK0tTbkJBPT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.1/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0xGcjNGemVLcnVKSDdkdkJEZ2JEZlNoenduYmJOcmU1NUwvakR3WXZDU0k0Q1k0T2tDSnJtQ1FGSzJ3SGlrNXh0Q0xiZVpFZE9xbitJZVVHcG80clFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzYwMTczCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CnNtL2twckcxUy8wSTZocExrRE9Xb2Y1MVVESGtyM2M4QjIrd24zYXJGbjlDVlJKb1NIWkJORkZNRWx3dlBiS3czZGRzY1hVVXk4dzZsY2Y3RFlQaEJRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb01pTEJLdkNwQTFVQW5aSmlFdUl6djlDL1E1NWpSNng4blpabWVOV25INThWUU5sNE5mUnFHemRLeWJsaHpzcXRtVm9VUmRFTUNRczhMQjh6TEdhT3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzY5NzYwCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CkkyaUZXanM4dTRIczF0eG56OG5sRXhlK28xQ0ZTUVc0dFVwNUZjdmc5N1R6MktrRlJNS3haMGFRWmFMb2d0cWZoWFJBUlNPTzRjeG1ISFJoK0tTbkJBPT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.1/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0xGcjNGemVLcnVKSDdkdkJEZ2JEZlNoenduYmJOcmU1NUwvakR3WXZDU0k0Q1k0T2tDSnJtQ1FGSzJ3SGlrNXh0Q0xiZVpFZE9xbitJZVVHcG80clFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzYwMTczCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CnNtL2twckcxUy8wSTZocExrRE9Xb2Y1MVVESGtyM2M4QjIrd24zYXJGbjlDVlJKb1NIWkJORkZNRWx3dlBiS3czZGRzY1hVVXk4dzZsY2Y3RFlQaEJRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb01pTEJLdkNwQTFVQW5aSmlFdUl6djlDL1E1NWpSNng4blpabWVOV25INThWUU5sNE5mUnFHemRLeWJsaHpzcXRtVm9VUmRFTUNRczhMQjh6TEdhT3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzY5NzYwCWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CkkyaUZXanM4dTRIczF0eG56OG5sRXhlK28xQ0ZTUVc0dFVwNUZjdmc5N1R6MktrRlJNS3haMGFRWmFMb2d0cWZoWFJBUlNPTzRjeG1ISFJoK0tTbkJBPT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.1/PicCute.app.tar.gz"
     }
   }
