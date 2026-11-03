@@ -1,18 +1,18 @@
 {
   "version": "0.8.2",
-  "notes": "【新增功能】\n- 新增「动效制作（Beta）」功能：内置音波、扫光、彩带、声波纹四大实时动效模块，支持一键导出透明或带背景的 WebP、APNG、GIF 与 Lottie (JSON) 动画，首次进入输入邀请码即可解锁。\n- 新增 Figma 风格浮动取色面板：支持正方形饱和度/明度色板、色相条、Hex 数值实时联动，并集成 macOS 系统原生全屏放大镜吸管（无需屏幕录制授权即可吸取屏幕任意位置颜色）。\n- 音波动效新增「顶部生长」对齐模式，支持顶部、居中、底部三种生长方向切换。\n\n【体验与视觉优化】\n- 统一压缩、转换格式、序列帧、智能抠图与动效面板的模块分割线、折叠标题栏、连体分段切换按钮及下拉框样式。\n- 优化声波纹画布背景导出开关、彩带填充色板增删交互及纯文字 Toast 垂直居中显示效果。\n\n[New Features]\n- Motion Studio (Beta): Built-in Wave, Light Sweep, Confetti Ribbon, and Sound Ripple generators with real-time preview and one-click export to WebP, APNG, GIF, and Lottie (JSON), unlocked via invitation code.\n- Figma-Style Color Picker & Native Eyedropper: Square SV color field, hue slider, live Hex input, and native macOS `NSColorSampler` screen magnifier (sample any pixel on screen without screen-recording permissions).\n- Wave Alignment: Added Top Growth mode alongside Center and Bottom growth options.\n\n[Improvements & Visual Polish]\n- Unified section dividers, collapsible headers, segmented controls, and custom dropdown styling across all workspace panels.\n- Improved Ripple background export toggle, Ribbon palette add/remove controls, and vertical centering for text-only toast notifications.",
-  "pub_date": "2026-11-03T12:06:01.238Z",
+  "notes": "【新增功能】\n- 新增「动效制作（Beta）」功能：内置音波、扫光、彩带、声波纹四大实时动效模块，支持一键导出透明或带背景的 WebP、APNG、GIF 与 Lottie (JSON) 动画，首次进入输入邀请码即可解锁。\n- 新增 Figma 风格浮动取色面板：支持正方形饱和度/明度色板、色相条、Hex 数值实时联动，并集成 macOS 系统原生全屏放大镜吸管（无需屏幕录制授权即可吸取屏幕任意位置颜色）。\n- 音波动效新增「顶部生长」对齐模式，支持顶部、居中、底部三种生长方向切换。\n\n【体验与视觉优化】\n- 统一压缩、转换格式、序列帧、智能抠图与动效面板的模块分割线、折叠标题栏、连体分段切换按钮及下拉框样式。\n- 优化声波纹画布背景导出开关、彩带填充色板增删交互及纯文字 Toast 垂直居中显示效果。",
+  "pub_date": "2026-11-03T14:07:23.310Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tOdjdWZkNsZGl2TnY1dUJzdzBpVG9mbVI0WXpyRVZYcVdiMXNCK2x6UFFkTElXczR0YkZ1RTFCNnh0M3BLU1QrUWpvWDlWRHlCY25SR1I5YTlsK0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzA3NTU4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClNjSWlPU0dWQjFuRzh5bGdGRjFqMG1Mazd4RTl5bU8vSysrUXFFK3lic0o3Z3FZTUQrYStUbndlNTBWbzNUWGhick1rUG9mU3FUeHNUQ2F1d1phUkRBPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0NyQkJFMHlhWDM5TnY4TXVobEtwUDY2NmMzLzhqS0tLSjNFOTVhQWFtcW1zZHlUTDNZOE1pY1lzdkhoUlhWd1paMTFhcUhBbURRMEJiQituSzBRcHdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzE0ODM2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Cm9Yb3MyZUVTOFZBaFhrK2NPNVg4ZFdLa1FIc0loaXdHQ292enVPMFdpSWtKN0FoL1pyT3hhVHJpMXplNXJWdUVidFJ3YlVBV1dpRWVZbUF3dnNWckR3PT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tOdjdWZkNsZGl2TnY1dUJzdzBpVG9mbVI0WXpyRVZYcVdiMXNCK2x6UFFkTElXczR0YkZ1RTFCNnh0M3BLU1QrUWpvWDlWRHlCY25SR1I5YTlsK0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzA3NTU4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClNjSWlPU0dWQjFuRzh5bGdGRjFqMG1Mazd4RTl5bU8vSysrUXFFK3lic0o3Z3FZTUQrYStUbndlNTBWbzNUWGhick1rUG9mU3FUeHNUQ2F1d1phUkRBPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0NyQkJFMHlhWDM5TnY4TXVobEtwUDY2NmMzLzhqS0tLSjNFOTVhQWFtcW1zZHlUTDNZOE1pY1lzdkhoUlhWd1paMTFhcUhBbURRMEJiQituSzBRcHdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzE0ODM2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Cm9Yb3MyZUVTOFZBaFhrK2NPNVg4ZFdLa1FIc0loaXdHQ292enVPMFdpSWtKN0FoL1pyT3hhVHJpMXplNXJWdUVidFJ3YlVBV1dpRWVZbUF3dnNWckR3PT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tOdjdWZkNsZGl2TnY1dUJzdzBpVG9mbVI0WXpyRVZYcVdiMXNCK2x6UFFkTElXczR0YkZ1RTFCNnh0M3BLU1QrUWpvWDlWRHlCY25SR1I5YTlsK0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzA3NTU4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClNjSWlPU0dWQjFuRzh5bGdGRjFqMG1Mazd4RTl5bU8vSysrUXFFK3lic0o3Z3FZTUQrYStUbndlNTBWbzNUWGhick1rUG9mU3FUeHNUQ2F1d1phUkRBPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0NyQkJFMHlhWDM5TnY4TXVobEtwUDY2NmMzLzhqS0tLSjNFOTVhQWFtcW1zZHlUTDNZOE1pY1lzdkhoUlhWd1paMTFhcUhBbURRMEJiQituSzBRcHdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzE0ODM2CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6Cm9Yb3MyZUVTOFZBaFhrK2NPNVg4ZFdLa1FIc0loaXdHQ292enVPMFdpSWtKN0FoL1pyT3hhVHJpMXplNXJWdUVidFJ3YlVBV1dpRWVZbUF3dnNWckR3PT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
     }
   }
