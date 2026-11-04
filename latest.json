@@ -1,19 +1,19 @@
 {
-  "version": "0.8.2",
-  "notes": "【新增功能】\n- 新增「动效制作（Beta）」功能：内置音波、扫光、彩带、声波纹四大实时动效模块，支持一键导出透明或带背景的 WebP、APNG、GIF 与 Lottie (JSON) 动画，首次进入输入邀请码即可解锁。\n- 新增 Figma 风格浮动取色面板：支持正方形饱和度/明度色板、色相条、Hex 数值实时联动，并集成 macOS 系统原生全屏放大镜吸管（无需屏幕录制授权即可吸取屏幕任意位置颜色）。\n- 音波动效新增「顶部生长」对齐模式，支持顶部、居中、底部三种生长方向切换。\n\n【体验与视觉优化】\n- 统一压缩、转换格式、序列帧、智能抠图与动效面板的模块分割线、折叠标题栏、连体分段切换按钮及下拉框样式。\n- 优化声波纹画布背景导出开关、彩带填充色板增删交互及纯文字 Toast 垂直居中显示效果。",
-  "pub_date": "2026-11-03T16:32:09.720Z",
+  "version": "0.8.3",
+  "notes": "【体验优化】\n- 动效制作（Beta）开放使用，进入动效模式即可直接使用，无需输入邀请码。\n- 应用内检查更新时，更新说明会按当前界面语言（中文/英文）显示对应文案。",
+  "pub_date": "2026-11-04T07:17:50.092Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FDTkUrN2pMbldwUHM4MFl4M1prLzhDZXhWMU1jV3RiZ1ZtRmE1aE9vanYxMnJXNUVjQThrNUc3ZU9VM2NaRDIwTnVIUzNsNmdOVy9neWI0NlZ2SFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIzNTI4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClhvTTZxdVV6djZ3T0p0dWZVWG9uMVZsRUJURkQ2NWw2Szd2aFcrUk9ybHlFaEZseGVlQ1p6ZnVYMHorRTJHYnQzVVNyRDNtQVhlNDIrbmJ1QUZTSkJnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FDTkUrN2pMbldwUHM4MFl4M1prLzhDZXhWMU1jV3RiZ1ZtRmE1aE9vanYxMnJXNUVjQThrNUc3ZU9VM2NaRDIwTnVIUzNsNmdOVy9neWI0NlZ2SFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIzNTI4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClhvTTZxdVV6djZ3T0p0dWZVWG9uMVZsRUJURkQ2NWw2Szd2aFcrUk9ybHlFaEZseGVlQ1p6ZnVYMHorRTJHYnQzVVNyRDNtQVhlNDIrbmJ1QUZTSkJnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0FDTkUrN2pMbldwUHM4MFl4M1prLzhDZXhWMU1jV3RiZ1ZtRmE1aE9vanYxMnJXNUVjQThrNUc3ZU9VM2NaRDIwTnVIUzNsNmdOVy9neWI0NlZ2SFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIzNTI4CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClhvTTZxdVV6djZ3T0p0dWZVWG9uMVZsRUJURkQ2NWw2Szd2aFcrUk9ybHlFaEZseGVlQ1p6ZnVYMHorRTJHYnQzVVNyRDNtQVhlNDIrbmJ1QUZTSkJnPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.2/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
     }
   }
 }
