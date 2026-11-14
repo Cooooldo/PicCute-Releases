@@ -1,7 +1,7 @@
 {
   "version": "0.8.3",
-  "notes": "【体验优化】\n- 动效制作（Beta）开放使用，进入动效模式即可直接使用，无需输入邀请码。\n- 应用内检查更新时，更新说明会按当前界面语言（中文/英文）显示对应文案。",
-  "pub_date": "2026-11-04T07:17:50.092Z",
+  "notes": "【体验优化】\r\n- 动效制作（Beta）开放使用，进入动效模式即可直接使用，无需输入邀请码。\r\n- 应用内检查更新时，更新说明会按当前界面语言（中文/英文）显示对应文案。",
+  "pub_date": "2026-11-14T18:16:26.786Z",
   "platforms": {
     "darwin-universal": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
@@ -14,6 +14,10 @@
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0NwZFp1endmOUdNaWh6alJ5VWkzWklxQjlXTG1MMElMMnpFSzJzSHAxY0ZMMkVtUTVDWHR1cE04YVBXdWJ2bDd5bTRteWxxZ25XQzhBcG4zLytYcFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjgwMTgwCWZpbGU6UGljQ3V0ZV8wLjguM194NjQtc2V0dXAuZXhlCklGUnFmaFlaRXI0UE81cWhGNG84MFB1emJSSEZsT05naWovUDNDTnhWL1Zxdk95QndNUHdpVWZ1cUN5VXpYbTNVNVpDRVdqUFVaUW9JdE9rak9EU0RRPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute_0.8.3_x64-setup.exe"
     }
   }
 }
