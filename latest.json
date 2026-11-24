@@ -1,23 +1,19 @@
 {
-  "version": "0.8.3",
-  "notes": "【体验优化】\r\n- 动效制作（Beta）开放使用，进入动效模式即可直接使用，无需输入邀请码。\r\n- 应用内检查更新时，更新说明会按当前界面语言（中文/英文）显示对应文案。",
-  "pub_date": "2026-11-14T18:16:26.786Z",
+  "version": "0.8.4",
+  "notes": "【新增功能】\n- 压缩、格式转换和序列帧新增尺寸调整，支持 0.5x、0.75x、1x、1.5x、2x 五档等比例缩放。\n- 每张图片根据自身源尺寸缩放；序列帧动画根据首帧尺寸确定输出画布。\n\n【体验优化】\n- 优化尺寸调整菜单、参数面板标题及 APNG 提示的显示样式。\n\n[What's New]\n- Resize images in Compress, Convert, and Frames using five proportional scale options: 0.5x, 0.75x, 1x, 1.5x, and 2x.\n- Each image scales from its original dimensions; frame animations use the first frame to determine the output canvas.\n\n[Improvements]\n- Refined the resize menu, settings headings, and APNG quality hints.",
+  "pub_date": "2026-11-24T05:39:36.959Z",
   "platforms": {
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0g5NVJwa2dIRHBKL205UnJPUVZYdXBUNm5XU3BVZ1p3TkxnSTZENzR0OFFWRG16RnNqaGlkZ2RkSXZtV1JoRCt2Y1lhSHVNV25EWUJOWnpOYjRET0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk4Nzc1CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClJnY3NsQnhUdFdrRHMydnkvUHEyQm41OStubkd0bklNUnNtL2N4dFEvWkkyQUloN0xQNDdqd3J4OCt3UHNXWmgyZmJBUG5xdUNZZ0xnV3RpbnVXN0RnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.4/PicCute.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0g5NVJwa2dIRHBKL205UnJPUVZYdXBUNm5XU3BVZ1p3TkxnSTZENzR0OFFWRG16RnNqaGlkZ2RkSXZtV1JoRCt2Y1lhSHVNV25EWUJOWnpOYjRET0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk4Nzc1CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClJnY3NsQnhUdFdrRHMydnkvUHEyQm41OStubkd0bklNUnNtL2N4dFEvWkkyQUloN0xQNDdqd3J4OCt3UHNXWmgyZmJBUG5xdUNZZ0xnV3RpbnVXN0RnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.4/PicCute.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0tCMW15dThlekFVUWhoMkNsWHI4a0tGS3hNRTJhZ3BCL1lDOFlXRERkQ0YzYS96WUYxcUdSOHN2d1AycHA1QnhxMm1MV3VmU1h3bzlmVUxrdGF6dUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzc2NjY3CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CjJNY0s4SUFuSHNQZkhRRW5sUHoxOGV3eFFHTk8yOFBNbWVwSHFCc2l2bG0vcDlpckpnbk53djN5MzJ6WG5XK3Fkeml5QnZyWFROM0dTRkd3ZHFMdkN3PT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute.app.tar.gz"
-    },
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0NwZFp1endmOUdNaWh6alJ5VWkzWklxQjlXTG1MMElMMnpFSzJzSHAxY0ZMMkVtUTVDWHR1cE04YVBXdWJ2bDd5bTRteWxxZ25XQzhBcG4zLytYcFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NjgwMTgwCWZpbGU6UGljQ3V0ZV8wLjguM194NjQtc2V0dXAuZXhlCklGUnFmaFlaRXI0UE81cWhGNG84MFB1emJSSEZsT05naWovUDNDTnhWL1Zxdk95QndNUHdpVWZ1cUN5VXpYbTNVNVpDRVdqUFVaUW9JdE9rak9EU0RRPT0K",
-      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.3/PicCute_0.8.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0g5NVJwa2dIRHBKL205UnJPUVZYdXBUNm5XU3BVZ1p3TkxnSTZENzR0OFFWRG16RnNqaGlkZ2RkSXZtV1JoRCt2Y1lhSHVNV25EWUJOWnpOYjRET0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk4Nzc1CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6ClJnY3NsQnhUdFdrRHMydnkvUHEyQm41OStubkd0bklNUnNtL2N4dFEvWkkyQUloN0xQNDdqd3J4OCt3UHNXWmgyZmJBUG5xdUNZZ0xnV3RpbnVXN0RnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.4/PicCute.app.tar.gz"
     }
   }
 }
