@@ -1,7 +1,7 @@
 {
   "version": "0.8.6",
-  "notes": "- 新增「智能抠图」功能：支持一键批量去除背景并导出透明 PNG / WebP，首次使用按需下载离线 AI 模型，本地运行、保护隐私。\n- 新增「外观切换」功能：支持「自动（跟随系统）」、「黑色」、「白色」三种外观模式。\n- 新增序列帧「抽帧」功能与内存帧缓存，切换预览更流畅。\n- 新增「动效制作（Beta）」功能：内置音波、扫光、彩带和声波纹四种动效，支持导出 WebP、APNG、GIF 和 Lottie 动画。\n- 压缩、格式转换和序列帧新增「尺寸调整」：支持 0.5x、0.75x、1x、1.5x、2x 五档等比例缩放。\n- 压缩质量支持手动输入精确百分比，也可使用方向键微调。\n- 完善在线自动更新：支持国内镜像加速下载、后台定期检查、稍后提醒和取消下载。\n- 完善 Windows 适配及在线升级支持。",
-  "pub_date": "2026-11-26T03:07:40.342Z",
+  "notes": "- 新增「智能抠图」功能：支持一键批量去除背景并导出透明 PNG / WebP，首次使用按需下载离线 AI 模型，本地运行、保护隐私。\r\n- 新增「外观切换」功能：支持「自动（跟随系统）」、「黑色」、「白色」三种外观模式。\r\n- 新增序列帧「抽帧」功能与内存帧缓存，切换预览更流畅。\r\n- 新增「动效制作（Beta）」功能：内置音波、扫光、彩带和声波纹四种动效，支持导出 WebP、APNG、GIF 和 Lottie 动画。\r\n- 压缩、格式转换和序列帧新增「尺寸调整」：支持 0.5x、0.75x、1x、1.5x、2x 五档等比例缩放。\r\n- 压缩质量支持手动输入精确百分比，也可使用方向键微调。\r\n- 完善在线自动更新：支持国内镜像加速下载、后台定期检查、稍后提醒和取消下载。\r\n- 完善 Windows 适配及在线升级支持。",
+  "pub_date": "2026-11-26T04:00:07.080Z",
   "platforms": {
     "darwin-universal": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0J2N29IMk1McEM5R0ZpZWVMZmhOS0l5RUhKV0V5enBBdVFXMXExMHpQUXFndHJoeFA5VVRvZ2lCTWdEZjBzRHhSY0JpTHkvaVBPUEZac01iVWtxNUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjYyNDU5CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CnpLUnV4NG5VYzRpbWlUblBiS2dMUU1wbkR2RUNjT25xRE0xek5ZeGh1UzlWTjF6TzdESlFIbFJPOTBlWFduOW9mY1dJU0U0RFcxUitaaVUyc01VNURRPT0K",
@@ -14,6 +14,10 @@
     "darwin-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0J2N29IMk1McEM5R0ZpZWVMZmhOS0l5RUhKV0V5enBBdVFXMXExMHpQUXFndHJoeFA5VVRvZ2lCTWdEZjBzRHhSY0JpTHkvaVBPUEZac01iVWtxNUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjYyNDU5CWZpbGU6UGljQ3V0ZS5hcHAudGFyLmd6CnpLUnV4NG5VYzRpbWlUblBiS2dMUU1wbkR2RUNjT25xRE0xek5ZeGh1UzlWTjF6TzdESlFIbFJPOTBlWFduOW9mY1dJU0U0RFcxUitaaVUyc01VNURRPT0K",
       "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.6/PicCute.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSR3lIa0dMcVFLb0t3RGNrNG5yNWREUTJjdVZOSGE0dWhyZ2lOODRDdTgxVThYeVREbjRwemJwODFmTTdyQ051TjlVNnJ4bUZYUkxHVCswbXRlb1h0elV5OWNBemdlVFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjY1NjAwCWZpbGU6UGljQ3V0ZV8wLjguNl94NjQtc2V0dXAuZXhlCnNwTU55ZG92VFJFeGgzcVJmSlFJS0RaelIwNzIyYnlWZ3RET2NVcDdUSU5yeHgxMy9tTEpzNkxTbUEwa0h2Vk9TL1JEaFZUK0V2SHUreEQwenNMZEJnPT0K",
+      "url": "https://ghfast.top/https://github.com/Cooooldo/PicCute-Releases/releases/download/v0.8.6/PicCute_0.8.6_x64-setup.exe"
     }
   }
 }
